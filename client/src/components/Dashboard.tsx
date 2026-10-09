@@ -210,7 +210,7 @@ const DashboardPage: React.FC = () => {
 
   const fetchActiveBooking = async () => {
     try {
-      const res = await fetch(`${API}/api/dashboard/active-booking`, {
+        const res = await fetch(`/api/dashboard/active-booking`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
