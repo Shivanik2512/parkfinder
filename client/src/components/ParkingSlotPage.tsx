@@ -205,6 +205,8 @@ const ParkingSlotPage: React.FC = () => {
   const [sortBy, setSortBy] = useState<string>("");
   /** When true, only EV-charging-enabled slots are fetched from the API */
   const [evFilter, setEvFilter] = useState<boolean>(false);
+  const vehicleTypes = ["All", "Car", "Bike", "EV"];
+  const [vehicleFilter, setVehicleFilter] = useState<string>("All");
   const [viewMode, setViewMode] = useState<"list" | "map">("list");
   const [selectedMapSlot, setSelectedMapSlot] = useState<ParkingSlot | null>(
     null,
@@ -600,6 +602,22 @@ const ParkingSlotPage: React.FC = () => {
         (slot) => slot.status.toLowerCase() === statusFilter.toLowerCase(),
       );
     }
+    if (vehicleFilter !== "All") {
+      filtered = filtered.filter((slot) => {
+        if (vehicleFilter === "EV") {
+          return (
+            slot.isEVChargingStation === true ||
+            slot.supportedVehicles?.includes("EV")
+          );
+        }
+        // Slots with no vehicle info are treated as supporting every type
+        return (
+          !slot.supportedVehicles ||
+          slot.supportedVehicles.length === 0 ||
+          slot.supportedVehicles.includes(vehicleFilter)
+        );
+      });
+    }
 
     // Client-side guard: if evFilter is on but server somehow returned non-EV slots,
     // ensure we only show EV slots in the list
@@ -635,7 +653,7 @@ const ParkingSlotPage: React.FC = () => {
     }
 
     return filtered;
-  }, [parkingSlots, searchTerm, statusFilter, sortBy, userLocation, evFilter]);
+  }, [parkingSlots, searchTerm, statusFilter, sortBy, userLocation, evFilter, vehicleFilter]);
 
   // Render Map View
   const renderMapView = () => {

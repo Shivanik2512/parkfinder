@@ -44,7 +44,7 @@ const rawData = [
     openingTime: "06:00 AM",
     closingTime: "10:00 PM",
     images: [
-      "https://images.unsplash.com/photo-1611288875785-5c4fe859e1a3?w=800",
+      "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800",
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
     ],
   },
@@ -98,32 +98,12 @@ const rawData = [
     openingTime: "24 Hours",
     closingTime: "24 Hours",
     images: [
-      "https://images.unsplash.com/photo-1559329255-4b5b3e5f1e63?w=800",
-      "https://images.unsplash.com/photo-1611288875785-5c4fe859e1a3?w=800",
+      "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800",
+      "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800",
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800"
     ],
   },
-  {
-    name: "Power Favoriter",
-    email: "power.favorites@demo.com",
-    password: "Demo@1234",
-    role: "user",
-    favorites: [],
-  },
-  {
-    name: "Zero Faves",
-    email: "zero.faves@demo.com",
-    password: "Demo@1234",
-    role: "user",
-    favorites: [],
-  },
-  {
-    name: "New User Empty",
-    email: "newbie@demo.com",
-    password: "Demo@1234",
-    role: "user",
-    favorites: [],
-  },
+  
 ];
 
 // Define specific static parking lots
@@ -179,7 +159,7 @@ const staticParkingLots = [
     closingTime: "12:00 AM",
     images: [
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800",
-      "https://images.unsplash.com/photo-1559329255-4b5b3e5f1e63?w=800",
+      "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800",
       "https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?w=800"
     ],
   },
@@ -215,7 +195,7 @@ const staticParkingLots = [
     closingTime: "11:00 PM",
     images: [
       "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800",
-      "https://images.unsplash.com/photo-1611288875785-5c4fe859e1a3?w=800"
+      "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800"
     ],
   },
   {
@@ -232,7 +212,7 @@ const staticParkingLots = [
     openingTime: "07:00 AM",
     closingTime: "10:00 PM",
     images: [
-      "https://images.unsplash.com/photo-1559329255-4b5b3e5f1e63?w=800",
+      "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800",
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800"
     ],
   },
@@ -270,7 +250,7 @@ const staticParkingLots = [
     closingTime: "11:00 PM",
     images: [
       "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800",
-      "https://images.unsplash.com/photo-1559329255-4b5b3e5f1e63?w=800"
+      "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800"
     ],
   },
   {
@@ -287,7 +267,7 @@ const staticParkingLots = [
     openingTime: "08:00 AM",
     closingTime: "10:00 PM",
     images: [
-      "https://images.unsplash.com/photo-1611288875785-5c4fe859e1a3?w=800",
+      "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800",
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800",
       "https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?w=800"
     ],
